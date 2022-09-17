@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+char nome[50];
+float hr, sb,sl,ir,inss;//horas trabalhadas,//salario bruto,salario liquido
+int dp;//dependentes
+
+printf("insira o nome do funcionario: ");
+gets(nome);
+
+printf("insira as horas trabalhadas: ");
+scanf("%f", &hr);
+
+ printf("insira o numero de dependentes: ");
+scanf("%d", &dp);
+
+sb = hr*12+dp*40;
+ir = 5.0/100 * sb;
+inss = 8.5/100 * sb;
+
+sl = sb - ir -inss;
+
+printf("O nome do funcionario e %s\n",nome);
+printf("horas trabalhadas e %.2f\n",hr);
+printf("numero de dependentes %d\n",dp);
+printf("o salario liquido do funcionario e %.2f\n",sl);
+
+    return 0;
+}
