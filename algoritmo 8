@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+float distancia, consumo,preco, litros,precoFinal;
+
+printf("qual a distancia? (R$)");
+scanf("%f",&distancia);
+printf("qual o consumo do carro? (km/litro)");
+scanf("%f",&consumo);
+printf("qual o valor da gasolina por litro? (R$)");
+scanf("%f",&litros);
+
+litros = distancia/consumo;
+precoFinal =preco*litros;
+
+printf("Para percorrer %.2f km \nira gastar R$ %.2f com %0.2f litros",litros,distancia,precoFinal);
+
+
+
+
+
+    return 0;
+}
