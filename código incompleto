@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+
+
+{
+ int infração;
+ 
+ printf(" digite sua infração :");
+ scanf("%d",&infração);
+ 
+ if( infração == 80){
+     printf("Não sofrerá multa");
+ }else{
+     if(infração > 80);
+     printf("sofrerá multa leve");
+ }
+ if(infração >80){
+    printf("sofrerá multa grave");
+ }
+
+
+    return 0;
+}
