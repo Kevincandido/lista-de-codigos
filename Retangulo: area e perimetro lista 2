@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+
+int main()
+{
+
+float base,altura,area,perimetro;
+
+printf("entre com a base do retangulo :");
+scanf("%f",&base);
+
+printf("entre com a altura do retangulo :");
+scanf("%f",&altura);
+
+area=base*altura;
+perimetro=base*2+altura*2;
+
+printf("a area do retangulo e %.2f e o perimetro e %.2f",area,perimetro);
+
+
+    return 0;
+}
